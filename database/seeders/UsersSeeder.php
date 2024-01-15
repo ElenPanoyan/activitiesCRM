@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
 
 class UsersSeeder extends Seeder
 {
@@ -18,19 +18,22 @@ class UsersSeeder extends Seeder
             'name' => "Super Admin",
             'email' => "super_admin@gmail.com",
             'password' => Hash::make('12345678'),
-            'role' => 'super_admin'
+            'role' => 'super_admin',
+            'api_token' => hash('sha256', Str::random(60))
         ]);
         DB::table('users')->insert([
             'name' => "Test User",
             'email' => "user@gmail.com",
             'password' => Hash::make('12345678'),
-            'role' => 'user'
+            'role' => 'user',
+            'api_token' => hash('sha256', Str::random(60))
         ]);
         DB::table('users')->insert([
             'name' => "Test Manager",
             'email' => "manager@gmail.com",
             'password' => Hash::make('12345678'),
-            'role' => 'manager'
+            'role' => 'manager',
+            'api_token' => hash('sha256', Str::random(60))
         ]);
     }
 }
