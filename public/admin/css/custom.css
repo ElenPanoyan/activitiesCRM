@@ -1,0 +1,45 @@
+.custom-image-input {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.custom-image-input input[type="file"] {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.custom-image-input label {
+    display: inline-block;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-preview {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    display: none;
+}
+
+.delete-button {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 5px;
+    position: relative;
+    bottom: 216px;
+    left: 89%;
+    display: block;
+}
