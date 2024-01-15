@@ -15,7 +15,7 @@ To deploy this project run
 
   git clone 
 
-  .env configurations for mail and db
+  .env configurations for db
 
   composer install
 
@@ -30,3 +30,6 @@ To deploy this project run
   npm run dev
 
   php artisan serve
+
+  php artisan storage:link
+
