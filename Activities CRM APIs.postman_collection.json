@@ -1,0 +1,73 @@
+gi{
+	"info": {
+		"_postman_id": "69fa733a-0bb0-4618-a081-4b1d25bb9056",
+		"name": "Activities CRM APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16960945"
+	},
+	"item": [
+		{
+			"name": "Get user activities",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "example: http://127.0.0.1:8000/api/get-user-activities?date_range=1/13/01 - 5/3/22 (GET Method)\n\n\"date_range\" - optional\n\nuse Bearer token"
+			},
+			"response": [
+				{
+					"name": "Get user activities",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "example: [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/get-user-activities?date_range=1/13/01)sign-up (POST Method)\n\n\"email\" - required\n\n\"password\" -required\n\n\"password_confirmation\" - required\n\n\"name\" - required"
+			},
+			"response": [
+				{
+					"name": "Sign Up",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Sign In",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"description": "example: [http://127.0.0.1:8000/api/](http://127.0.0.1:8000/api/get-user-activities?date_range=1/13/01)sign-in (POST Method)\n\n\"email\" - required\n\n\"password\" -required"
+			},
+			"response": [
+				{
+					"name": "Sign In",
+					"originalRequest": {
+						"method": "GET",
+						"header": []
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}
